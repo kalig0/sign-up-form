@@ -7,7 +7,55 @@
     <link rel="stylesheet" href="styles.css">
     <title>Sign Up Form</title>
 </head>
-<body>
-    
+<body ">
+    <div class="content">
+        <div class="card">
+            <div class="logo">
+                <img class="logo-img" src="./images/odin.png">
+                <h1>ODIN</h1>
+            </div>
+            <p class="credit">Photo by Halie West on Unsplash</p>
+        </div>
+        <div class="right">
+            <div class="head">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <p class="hanging-text">You <em>know</em> you want to.</p>
+            </div>
+            <form action="#">
+                <div class="signup">
+                    <p class="signup-title">Let's do this!</p>
+                    <div class="input">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name" required>  
+                    </div>
+                    <div class="input">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name" required>  
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>  
+                    </div>
+                    <div class="input">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone" minlength="9" maxlength="9">  
+                    </div>
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>  
+                    </div>
+                    <div class="input">
+                        <label for="password_confirm">Confirm Password</label>
+                        <input type="password" name="password_confirm" id="password_confirm" required>  
+                    </div>                     
+                </div>
+                <div class="signup-button"><button type="submit">Create Account</button></div>
+            </form>
+            <div class="foot">
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>             
+        </div>
+    </div>
 </body>
 </html>

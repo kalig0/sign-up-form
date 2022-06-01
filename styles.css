@@ -1,3 +1,136 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+}
+
+.content, .logo {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* left */
+.card {
+    background-image: url(./images/leaf.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 35%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.logo {
+    height: auto;
     background-color: black;
+    opacity: 0.7;
+    position: relative;
+    top: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    height: 10vh;
+}
+
+h1 {
+    color: white;
+}
+
+.credit {
+    color: white;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+/* right */
+.right {
+    width: 65%;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.signup {
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+.signup-button {
+    background-color: #e5e5e5;
+}
+
+.head, .signup, .signup-button, .foot {
+    padding-left: 3vw;
+}
+
+.head {
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 90%;
+}
+
+.hanging-text {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.signup-title {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;    
+}
+
+input {
+    border-radius: 3px;
+    border: 1px solid;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid green;
+}
+
+button {
+    background-color: #596d59;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid #596d59;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: green;
+}
+
+a {
+    color: #596d59;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.foot {
+    margin-top: 20px;
 }
